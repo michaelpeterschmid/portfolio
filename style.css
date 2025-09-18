@@ -1,0 +1,341 @@
+
+/* || UTILITY CLASSES */
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+/*varables*/
+
+:root {
+    --pico-border-radius:0.5rem;
+    --pico-typography-spacing-vertical: 1.5rem;
+    --pico-form-element-spacing-vertical: 1rem;
+    --pico-form-element-spacing-horizontal: 1.25rem;
+
+    --color-1: rgb(48, 48, 48);
+    --text-color: whitesmoke;
+    --accent-color: var(--pico-color-indigo-600);
+    --nav-height-expanded: 4.5rem;  /* Start-Höhe */
+    --nav-height-compact: 3rem;      /* Höhe nach dem Scrollen */
+    --nav-shrink-range: 160px;      /* Scrollstrecke bis komplett kompakt */
+}
+
+
+
+
+/* |||| Header Styles |||| */
+
+#headerwrapper_top, #headerwrapper_bottom{
+    height: 1.5rem;
+    background-color: var(--color-1);
+
+}
+
+header{
+    background-color: var(--color-1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav{
+    height: 4rem;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+}
+.links-container{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    
+}
+
+nav a{
+    font-weight: bold;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none; /*Entfernt das Unterstreichen*/
+    color: var(--text-color);
+}
+
+nav a:hover{
+    background-color: var(--accent-color);
+}
+
+/* Home-Link immer sichtbar links */
+nav .home-link {
+
+white-space: nowrap;
+
+height: 100%;
+padding: 0 20px;
+text-decoration: none;
+color: var(--text-color);
+}
+
+nav svg{
+    fill: var(--text-color);
+}
+#sidebar-active{
+    display: none;
+}
+.open-sidebar-button, .close-sidebar-button{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .links-container{
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start; /*alles auf der linken Seite platzieren*/
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+
+        background-color: var(--color-1);
+        box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+        transition: 0.5s ease-out;
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    nav div a{
+        box-sizing: border-box;
+        height: 5rem;
+        width: 100%;
+        padding: 20px 30px;
+        justify-content: flex-start; /*links auf der linken Seite platzieren*/
+    }
+    .open-sidebar-button, .close-sidebar-button{
+        padding: 20px;
+        display: block;
+    }
+    #sidebar-active:checked ~ .links-container{ /*pseudo classe die boolean zurückgibt*/
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+
+}
+
+
+
+
+
+/*So können default pico styles spezifiert werden für ausgewählte elemente!*/  
+
+h1 {
+    --pico-font-family: Pacifico, cursive;
+    --pico-font-weight: 400;
+    --pico-typography-spacing-vertical: 0.5rem;
+}
+button {
+    --pico-font-weight: 700;
+}
+
+
+
+
+/*   ||||||   about STYLES (grid logic) neben Pico CSS   |||||   */
+
+.hero{
+    /*Mobile first approach*/
+    display: grid;
+    grid-template-columns: 1fr; /*Take up all the available space*/
+    gap: 7px;
+    margin: 0 auto;  /* oben und unter kein marign und blockelemente horizontal zentrieren*/
+}
+
+.hero div img{
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.hero__welcome{
+    display: grid;
+    place-items: center;
+
+}
+
+
+/*TABLET*/
+@media (min-width: 800px) {
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr; /*causes all grid items to have same size as largest item or better said:  equal rows height across the grid */
+    }
+
+    .hero div img{
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+        border-radius: 50%;
+    }
+}
+
+
+/*   ||||||   Card STYLES (grid logic) expanding Pico CSS   |||||   */
+
+.projects__title{
+    padding-bottom: 1rem;
+
+}
+
+
+.skills{
+    background: whitesmoke; 
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    box-shadow: 0 0 10px 0 black
+}
+
+.skills-grid{
+    /*Mobile first approach*/
+    display: grid;
+    grid-template-columns: 1fr; /*Take up all the available space*/
+    column-gap: 3rem;
+    justify-self: center  stretch;
+    text-align: center;
+}
+
+.skillslist ul{          
+    padding-inline-start: 0;/* remove left indent */
+    text-align: center;     /* center like the headers */
+}
+
+.skillslist li {
+    display: block;
+    list-style: none;
+    font-weight: 600;
+}
+
+
+.skillslist li img.icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+.projects{
+    /*Mobile first approach*/
+    display: grid;
+    grid-template-columns: 1fr; /*Take up all the available space*/
+    justify-self: center;
+    gap: 2rem;
+    
+    
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1279px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr; /*causes all grid items to have same size as largest item (all rows included)*/
+    }
+
+    .skills-grid{
+        grid-template-columns: repeat(2, 1fr); /*Take up all the available space*/
+        
+    }
+
+    .skills-grid > :last-child {
+        grid-column: 1 / -1;   /* take the full row */
+        justify-self: center;  /* center inside that row */
+    }            
+
+}
+/*Desktop*/
+@media (min-width: 1280px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr; /*causes all grid items to have same size as largest item*/
+    }
+
+    .skills-grid{
+        grid-template-columns: repeat(3, 1fr); /*Take up all the available space*/
+    }
+    
+}
+
+.projects__card {
+    max-width: 400px;
+    max-height: auto;
+    border: 2px solid #000000;
+    border-radius: 1rem;
+    padding: 0;
+    background: whitesmoke;
+    transform: translateY(0);
+    display: grid;
+    align-items: stretch; /* rows align to tallest item */
+    
+}
+
+.projects__card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    max-height: fit-content;
+    min-height: fit-content;
+}
+
+.projects__card p {
+    min-height: fit-content;
+}
+
+.projects__card .textcontent {
+    padding: 0 1rem;
+    display: grid;
+    justify-items: center;
+
+}
+
+/* featured modifier */
+.projects__card--featured {
+    border: 0.2rem solid gold;
+}
+
+.projects__card:hover {
+    /* Zielzustand */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ||| Footer Styles zusätzlich zu pico|||  */
+.footerdiv{
+    background-color: var(--color-1);
+    color: var(--text-color);
+}
+
+.footerdiv footer section p, .footerdiv footer section h3{
+    color: var(--text-color);
+}
