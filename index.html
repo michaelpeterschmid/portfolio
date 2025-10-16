@@ -2,8 +2,31 @@
 <html lang="de" data-theme="light"> <!--Force browsers to display white-mode -->
     
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- 1) Klare, passende Suchbegriffe -->
+    <title>Michael Peter Schmid – Softwareentwickler in Bern | Portfolio</title>
+    <meta name="description" content="Offizielle Portfolio-Seite von Michael Peter Schmid (Michael Schmid), Softwareentwickler in Bern. Projekte, Skills & Kontakt." />
+
+    <!-- 2) Eindeutige URL für Google -->
+    <link rel="canonical" href="https://michaelpeterschmid.github.io/portfolio/" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- 3) Strukturierte Daten (Person) – hilft bei Namenssuche -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Peter Schmid",
+      "alternateName": ["Michael Schmid", "Michael P. Schmid"],
+      "jobTitle": "Softwareentwickler",
+      "address": {"@type":"PostalAddress","addressLocality":"Bern","addressCountry":"CH"},
+      "url": "https://michaelpeterschmid.github.io/portfolio/",
+      "image": "https://michaelpeterschmid.github.io/portfolio/img/portrait.png",
+      "sameAs": ["https://github.com/michaelpeterschmid"]
+    }
+    </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.indigo.min.css">
     <title>Michael P. Schmid - Portfolio</title>
@@ -14,7 +37,7 @@
     </div>
     <header>
         <nav class="container"> <!--Just apply container class to center but no pico style-->
-            <a href="#" class="home-link" data-text="Michael & Elina" style="--letters:15">
+            <a href="#" class="home-link" style="--letters:15">
                 Michael P. Schmid
             </a>
             <input type="checkbox" id="sidebar-active">
