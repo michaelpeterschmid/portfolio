@@ -1,579 +1,1013 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="light"> <!--Force browsers to display white-mode -->
-    
-<head>
+<html lang="de" data-theme="light">
+  <!--Force browsers to display white-mode -->
+
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- 1) Klare, passende Suchbegriffe -->
     <title>Michael Peter Schmid</title>
-    <meta name="description" content="Portfolio-Seite von Michael Peter Schmid (Michael Schmid, Michael P. Schmid), Softwareentwickler in Bern. Projekte, Skills & Kontakt.">
-
+    <meta
+      name="description"
+      content="Portfolio-Seite von Michael Peter Schmid (Michael Schmid, Michael P. Schmid), Softwareentwickler in Bern. Projekte, Skills & Kontakt." />
 
     <!-- 2) Eindeutige URL für Google -->
-    <link rel="canonical" href="https://michaelpeterschmid.github.io/portfolio/" />
+    <link
+      rel="canonical"
+      href="https://michaelpeterschmid.github.io/portfolio/" />
     <meta name="robots" content="index,follow" />
 
     <!-- 3) Strukturierte Daten (Person) – hilft bei Namenssuche -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Michael Peter Schmid",
-      "alternateName": ["Michael Schmid", "Michael P. Schmid", "michael peter schmid", "michael p. schmid", "michael schmid"],
-      "jobTitle": "Softwareentwickler",
-      "address": {"@type":"PostalAddress","addressLocality":"Bern","addressCountry":"CH"},
-      "url": "https://michaelpeterschmid.github.io/portfolio/",
-      "image": "https://michaelpeterschmid.github.io/portfolio/img/portrait.png",
-      "sameAs": ["https://github.com/michaelpeterschmid"]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael Peter Schmid",
+        "alternateName": [
+          "Michael Schmid",
+          "Michael P. Schmid",
+          "michael peter schmid",
+          "michael p. schmid",
+          "michael schmid"
+        ],
+        "jobTitle": "Softwareentwickler",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bern",
+          "addressCountry": "CH"
+        },
+        "url": "https://michaelpeterschmid.github.io/portfolio/",
+        "image": "https://michaelpeterschmid.github.io/portfolio/img/portrait.png",
+        "sameAs": ["https://github.com/michaelpeterschmid"]
+      }
     </script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.indigo.min.css">
-    <title>Michael P. Schmid - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="headerwrapper_top">
-    </div>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.conditional.indigo.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="headerwrapper_top"></div>
     <header>
-        <nav class="container"> <!--Just apply container class to center but no pico style-->
-            <a href="#" class="home-link" style="--letters:15">
-                Michael P. Schmid
-            </a>
-            <input type="checkbox" id="sidebar-active">
-            <label for="sidebar-active" class="open-sidebar-button">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="currentColor"><path 
-        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </label>
+      <nav class="container">
+        <!--Just apply container class to center but no pico style-->
+        <a href="#" class="home-link" style="--letters: 15">
+          Michael P. Schmid
+        </a>
+        <input type="checkbox" id="sidebar-active" />
+        <label for="sidebar-active" class="open-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="currentColor">
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          </svg>
+        </label>
 
-            <label id="overlay" for="sidebar-active"></label>
-        
-            <div class="links-container">
-                <label for="sidebar-active" class="close-sidebar-button">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </label>
-                
-                <a href="#about">About</a>
-                <a href="#skills">Kenntnisse</a>
-                <a href="#projects">Projekte</a>
-                <a href="#contact">Kontakt</a>
-            </div>
-        </nav>
+        <label id="overlay" for="sidebar-active"></label>
+
+        <div class="links-container">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="currentColor">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg>
+          </label>
+
+          <a href="#about">About</a>
+          <a href="#skills">Kenntnisse</a>
+          <a href="#projects">Projekte</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </nav>
     </header>
     <div id="headerwrapper_bottom"></div>
-    
 
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
 
-
-    <section class="pico container hero"> 
-       <div class="hero__welcome">
-            <div>
-                <h2>Willkommen! 
-                    <br>
-                Ich bin Michael Schmid </h2>
-                <h5>Softwareentwickler und Student aus Bern</h5>
-             </div>
-        </div> 
+    <section class="pico container hero">
+      <div class="hero__welcome">
         <div>
-            <img src="img/portrait.png" alt="">
+          <h2>
+            Willkommen!
+            <br />
+            Ich bin Michael Schmid
+          </h2>
+          <h5>Softwareentwickler und Student aus Bern</h5>
         </div>
+      </div>
+      <div>
+        <img src="img/portrait.png" alt="" />
+      </div>
     </section>
 
-    <br>
+    <br />
 
     <main class="pico container">
-        <section  id="about">
-            <hr class="pico container">
-           
-                <h3>Über mich</h3>
-                <p>Ich fokussiere mich auf Full-Stack-Softwareentwicklung, Machine Learning und Data Engineering. Kontinuierliches Lernen und das Bereitstellen nützlicher Lösungen machen mir Freude. Seit 2024 studiere ich Data Engineering an der Berner Fachhochschule in Biel.</p> 
-    
-        </section>
-        <hr class="pico container">
-        <section id="skills" class="skills">
-            <h2 class="center">Kenntnisse</h2>
-            <div class="skills-grid">
-                
-                <div class="skillslist">
-                    <h4>Frontend</h4>
-                    <ul>
-                        <li><img src="./img/icons/html-5-svgrepo-com.svg"  class="icon">HTML</li>
-                        <li><img src="./img/icons/css3-svgrepo-com.svg"   class="icon"> CSS</li>
-                        <li><img src="./img/icons/JavaScript-svgrepo-com.svg"   class="icon"> JavaScript</li>
-                        <li><img src="./img/icons/reactjs-svgrepo-com.svg" class="icon"> React</li>
+      <section id="about">
+        <hr class="pico container" />
 
-                    </ul>
-                </div>
-                <div class="skillslist">
-                    <h4>Backend</h4>
-                    <ul>
-                        <li> <img src="./img/icons/nodejs-1-logo-svgrepo-com.svg" class="icon"> Node.js (Express)</li>
-                        <li> <img src="./img/icons/mysql-logo-svgrepo-com.svg" class="icon"> MySQL</li>
-                        <li> <img src="./img/icons/firebase-svgrepo-com.svg" class="icon"> Firebase</li>
-                    </ul>
-                </div>
-                <div class="skillslist">
-                    <h4>Others/Learning</h4>
-                    <ul>
-                        <li> <img src="./img/icons/python-svgrepo-com.svg" class="icon"> Python</li>
-                        <li> <img src="./img/icons/java-svgrepo-com.svg" class="icon"> Java</li>
-                        <li> <img src="./img/icons/typescript-icon-svgrepo-com.svg" class="icon"> TypeScript</li>
-                        <li> <img src="./img/icons/apache-spark-svgrepo-com.svg" class="icon"> Apache Spark</li>
-                        
-                        <li> <img src="./img/icons/mongo-svgrepo-com.svg" class="icon"> MongoDB</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr class="pico container">
-        
-
-        <h2 class="projects__title ">Projekte</h2>
-        <section  id="projects" class="projects ">
-
-            <div class="projects__card projects__card--featured">
-               <!--  so modifiers are often used combined with javascrip but above is a example without it -->
-
-                
-                <img src="./img/connect43d.png" alt="">
-                <div class="textcontent">
-                <h4>Connect 4 3D</h4>
-                <p> Strategiespiel mit Singleplayer und Multiplayer Unterstützung. <span class="nowrap"><a href="https://play.google.com/store/apps/details?id=io.github.michaelpeterschmid.connect43doffline">herunterladen bei Google Play Store</a></span>   <span class="nowrap">or <a href="https://michaelpeterschmid.github.io/connect-4-3D-static/">Web-App testen</a></span></p>
-                      <!-- Modal -->
-                    <section id="connect43d_modal">
-                        <button class="secondary" data-target="connect43d" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>
-
-            <div class="projects__card">
-                <img src="./img/ipa.png" alt="">
-                <div class="textcontent">
-                <h4>Arbeitszeiterfassung</h4>
-                <p>
-                Erfassen und Verwalten von Arbeitszeiten. Entwickelt im Rahmen meiner Lehrabschlussarbeit für die Technische Fachschule Bern.            
-                </p>
-
-                                      <!-- Modal -->
-                    <section id="ipa_modal">
-                        <button class="secondary" data-target="arbeitszeiterfassung" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>
-
-
-            <div class="projects__card">
-                <img src="./img/plot.png" alt="">
-                <div class="textcontent">
-                <h4>DA und ML</h4>
-                <p>
-                Kleinere Projekte mit dem Ziel nützliche Informationen aus Daten zu gewinnen und/oder ML Modelle zu trainieren.
-                </p>
-
-                                      <!-- Modal -->
-                    <section id="da_ml_modal">
-                        <button class="secondary" data-target="da_ml" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>
-
-            <div class="projects__card">
-                <img src="./img/bovo.png" alt="">
-                <div class="textcontent">
-                <h4>Gomoku</h4>
-                <p>
-                Dieses Strategiespiel heisst auf Deutsch "Fünf in einer Reihe". Es ist besonders in Ostasien weit verbreitet.
-                </p>
-
-                                      <!-- Modal -->
-                    <section id="bovo_modal">
-                        <button class="secondary" data-target="bovo" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>
-
-
-            <div class="projects__card">
-                <img src="./img/chatapp.png" alt="">
-                <div class="textcontent">
-                <h4>Chat App</h4>
-                <p>
-                Minimale ChatApp, welche das Erstellen und Beitreten von Rooms unterstützt. 
-                </p>
-
-                                      <!-- Modal -->
-                    <section id="chatapp_modal">
-                        <button class="secondary" data-target="chatapp" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>
-            <div class="projects__card">
-                <img src="./img/github-repo-git-octocat-svgrepo-com.svg" alt="">
-                <div class="textcontent">
-                <h4>Work in progress</h4>
-                <p>
-                    Auf meiner Github Seite sind weitere (meist kleinere) Projekte, zudem werden zukünftige Projekte dort hochgeladen.
-                </p>
-
-                                      <!-- Modal -->
-                    <section id="inprogress_modal">
-                        <button class="secondary" data-target="inprogress" onclick="toggleModal(event)">
-                        Mehr erfahren
-                        </button>
-                        
-                    </section>
-                    <!-- ./ Modal -->
-                </div>
-            </div>               
-        </section>
-
-        <br>
-        <hr class="pico container">
-
-        <section id="contact">
-            <h2 class="">Kontakt</h2>
-            
-            <form action="mailto:michaelpeterschmid@yahoo.de" method="post" enctype="text/plain">
-                <fieldset>
-                        <input type="text" name="name" id="name" placeholder="Name" required autocomplete="given-name">
-                                    
-                        <input type="email" name="email" id="email" placeholder="E-mail"
-                            required autocomplete="email">
-        
-                        <textarea name="message" id="message" cols="30" rows="10"
-                          required placeholder="Nachricht"></textarea>
-            
-                </fieldset>
-                <input type="reset">
-                <input type="submit">
-            </form>
-        </section>
- 
-        
-      <!-- Modal connect 4 3D -->
-    <dialog id="connect43d">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="connect43d"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Connect 4 3D</h3>
-        </header>
-        <img src="img/connect43d_modal.png" alt="connect 4 3d in action">
-        <br>
-        <br>
-        <h4>Verwendete Technologien:</h4>
-        <ul>
-            <li>HTML</li>
-            <li>Pico CSS</li>
-            <li>JavaScript</li>
-            <li>Socket.io</li>
-        </ul>
-        <h4>Beschreibung</h4>
+        <h3>Über mich</h3>
         <p>
-            Dies war ein Hobby-Projekt von mir. „4 Gewinnt 3D“ habe ich zum ersten Mal in klassischer Form auf einer Holzspielplatte mit meinem Cousin gespielt. Schon bald wurde es zu einem meiner Lieblings-Strategiespiele, da es sehr einfach zu verstehen ist und dennoch eine erstaunliche Spieltiefe bietet.
-            Da ich keine digitale Version des Spiels fand, kam mir die Idee, eine Web-App zu entwickeln, um es online mit meinen Freunden spielen zu können.
-            Die Entwicklung der digitalen Version ermöglichte es mir, sowohl an der Spiel­logik als auch an der Multiplayer-Implementierung zu tüfteln.
-            Die erste Version entstand während meiner Lehre (ca. 2021), kürzlich habe ich das Projekt wieder aufgenommen, neue Features hinzugefügt und es im Google Play Store veröffentlicht.
-            Das Backend für die Multiplayer Komponente wird auf Render gehostet.
-            <br>
-            <a href="https://play.google.com/store/apps/details?id=io.github.michaelpeterschmid.connect43doffline">herunterladen bei Google Play Store</a></span>   <br>
-            <span class="nowrap"><a href="https://michaelpeterschmid.github.io/connect-4-3D-static/">Web-App testen</a>
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="connect43d"
-            onclick="toggleModal(event)"
-          >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
- 
+          Ich fokussiere mich auf Full-Stack-Softwareentwicklung, Machine
+          Learning und Data Engineering. Kontinuierliches Lernen und das
+          Bereitstellen nützlicher Lösungen machen mir Freude. Seit 2024
+          studiere ich Data Engineering an der Berner Fachhochschule in Biel.
+        </p>
+      </section>
+      <hr class="pico container" />
+      <section id="skills" class="skills">
+        <h2 class="center">Kenntnisse</h2>
+        <div class="skills-grid">
+          <div class="skillslist">
+            <h4>Frontend</h4>
+            <ul>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/html-5-svgrepo-com.svg"
+                  class="icon" />HTML
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/css3-svgrepo-com.svg"
+                  class="icon" />
+                CSS
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/JavaScript-svgrepo-com.svg"
+                  class="icon" />
+                JavaScript
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/reactjs-svgrepo-com.svg"
+                  class="icon" />
+                React
+              </li>
+            </ul>
+          </div>
+          <div class="skillslist">
+            <h4>Backend</h4>
+            <ul>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/nodejs-1-logo-svgrepo-com.svg"
+                  class="icon" />
+                Node.js (Express)
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/java-svgrepo-com.svg"
+                  class="icon" />
+                Java
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/mysql-logo-svgrepo-com.svg"
+                  class="icon" />
+                MySQL
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/mongo-svgrepo-com.svg"
+                  class="icon" />
+                MongoDB
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/firebase-svgrepo-com.svg"
+                  class="icon" />
+                Firebase
+              </li>
+            </ul>
+          </div>
+          <div class="skillslist">
+            <h4>Others</h4>
+            <ul>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/python-svgrepo-com.svg"
+                  class="icon" />
+                Python
+              </li>
+
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/typescript-icon-svgrepo-com.svg"
+                  class="icon" />
+                TypeScript
+              </li>
+              <li>
+                <img
+                  alt="icon"
+                  src="./img/icons/apache-spark-svgrepo-com.svg"
+                  class="icon" />
+                Apache Spark
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr class="pico container" />
+
+      <h2 class="projects__title">Projekte</h2>
+      <section id="projects" class="projects">
+        <div class="projects__card">
+          <img src="./img/ipa.png" alt="" />
+          <div class="textcontent">
+            <h4>Arbeitszeiterfassung</h4>
+            <p>
+              Erfassen und Verwalten von Arbeitszeiten. Entwickelt im Rahmen
+              meiner Lehrabschlussarbeit für die Technische Fachschule Bern.
+            </p>
+
+            <!-- Modal -->
+            <section id="ipa_modal">
+              <button
+                class="secondary"
+                data-target="arbeitszeiterfassung"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/listmates.png" alt="" />
+          <div class="textcontent">
+            <h4>ListMates</h4>
+            <p>
+              Generische Liste-App zum Verwalten von gemeinsamen Listen
+              (Einkaufslisten, To-Do-Listen, etc.) <br />
+              <a href="https://listmates.web.app">Web-App testen</a>
+            </p>
+
+            <!-- Modal -->
+            <section id="listmates_modal">
+              <button
+                class="secondary"
+                data-target="listmates"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/job_analysis.png" alt="" />
+          <div class="textcontent">
+            <h5>Swiss IT job-market Analyse</h5>
+            <p>
+              <br />
+              Scraping, Datenaufbereitung und Analyse von IT-Jobangeboten in der
+              Schweiz. <br />
+              <a
+                href="https://michaelpeterschmid.github.io/job_scraping_results/"
+                >Ergebnisse ansehen</a
+              >
+            </p>
+
+            <!-- Modal -->
+            <section id="job_analysis_modal">
+              <button
+                class="secondary"
+                data-target="job_analysis"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card projects__card--featured">
+          <!--  so modifiers are often used combined with javascrip but above is a example without it -->
+
+          <img src="./img/connect43d.png" alt="" />
+          <div class="textcontent">
+            <h4>Connect 4 3D</h4>
+            <p>
+              Strategiespiel mit Singleplayer und Multiplayer Unterstützung.
+              <span class="nowrap"
+                ><a
+                  href="https://play.google.com/store/apps/details?id=io.github.michaelpeterschmid.connect43doffline"
+                  >herunterladen bei Google Play Store</a
+                ></span
+              >
+              <span class="nowrap"
+                >or
+                <a
+                  href="https://michaelpeterschmid.github.io/connect-4-3D-static/"
+                  >Web-App testen</a
+                ></span
+              >
+            </p>
+            <!-- Modal -->
+            <section id="connect43d_modal">
+              <button
+                class="secondary"
+                data-target="connect43d"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/statistical_testing.png" alt="" />
+          <div class="textcontent">
+            <h4>statistical testing</h4>
+            <p>
+              <br />
+              Ist eine grössere Entfernung zum Supermarkt mit grösserem
+              Warenkorb pro Besuch und selteneren Besuchen verbunden? <br />
+              <br />
+              <a
+                href="https://github.com/michaelpeterschmid/grocery_store_distance_statistical_testing/blob/main/analysis_report.ipynb"
+                >Ergebnisse ansehen</a
+              >
+            </p>
+
+            <!-- Modal -->
+            <section id="statistical_testing_modal">
+              <button
+                class="secondary"
+                data-target="statistical_testing"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/plot.png" alt="" />
+          <div class="textcontent">
+            <h4>DA und ML</h4>
+            <p>
+              Kleinere Projekte mit dem Ziel nützliche Informationen aus Daten
+              zu gewinnen und/oder ML Modelle zu trainieren.
+            </p>
+
+            <!-- Modal -->
+            <section id="da_ml_modal">
+              <button
+                class="secondary"
+                data-target="da_ml"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/bovo.png" alt="" />
+          <div class="textcontent">
+            <h4>Gomoku</h4>
+            <p>
+              Dieses Strategiespiel heisst auf Deutsch "Fünf in einer Reihe". Es
+              ist besonders in Ostasien weit verbreitet.
+            </p>
+
+            <!-- Modal -->
+            <section id="bovo_modal">
+              <button
+                class="secondary"
+                data-target="bovo"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+
+        <div class="projects__card">
+          <img src="./img/chatapp.png" alt="" />
+          <div class="textcontent">
+            <h4>Chat App</h4>
+            <p>
+              Minimale ChatApp, welche das Erstellen und Beitreten von Rooms
+              unterstützt.
+            </p>
+
+            <!-- Modal -->
+            <section id="chatapp_modal">
+              <button
+                class="secondary"
+                data-target="chatapp"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+        <div class="projects__card">
+          <img src="./img/github-repo-git-octocat-svgrepo-com.svg" alt="" />
+          <div class="textcontent">
+            <h4>Work in progress</h4>
+            <p>
+              Auf meiner Github Seite sind weitere (meist kleinere) Projekte,
+              zudem werden zukünftige Projekte dort hochgeladen.
+            </p>
+
+            <!-- Modal -->
+            <section id="inprogress_modal">
+              <button
+                class="secondary"
+                data-target="inprogress"
+                onclick="toggleModal(event)">
+                Mehr erfahren
+              </button>
+            </section>
+            <!-- ./ Modal -->
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <hr class="pico container" />
+
+      <section id="contact">
+        <h2 class="">Kontakt</h2>
+
+        <form
+          action="mailto:michaelpeterschmid@yahoo.de"
+          method="post"
+          enctype="text/plain">
+          <fieldset>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+              autocomplete="given-name" />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+              autocomplete="email" />
+
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Nachricht"></textarea>
+          </fieldset>
+          <input type="reset" />
+          <input type="submit" />
+        </form>
+      </section>
 
       <!-- Modal Arbeitszeiterfassung -->
-    <dialog id="arbeitszeiterfassung">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="arbeitszeiterfassung"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Arbeitszeiterfassung</h3>
-        </header>
-        <img src="img/ipa_modal.png" alt="Berechtigungskonzept">
-        <br>
-        <br>
-        <h4>Verwendete Technologien:</h4>
-        <ul>
+      <dialog id="arbeitszeiterfassung">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="arbeitszeiterfassung"
+              onclick="toggleModal(event)"></button>
+            <h3>Arbeitszeiterfassung</h3>
+          </header>
+          <img src="img/ipa_modal.png" alt="Berechtigungskonzept" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
             <li>Express.js</li>
             <li>Knex.js</li>
             <li>MySQL</li>
             <li>Azure Active Directory</li>
             <li>Insomnia REST</li>
-
-        </ul>
-        <h4>Beschreibung</h4>
-        <p>
-            Dies war ein Projekt im Rahmen meiner IPA für die Technische Fachschule Bern.
-            Ziel war es, ein Backend-Modul für eine Arbeitszeiterfassung zu entwickeln.
-            Umgesetzt wurde es als JavaScript-Webapplikation mit Node.js und Express.js, 
-            einer MySQL-Datenbank und Knex.js zur Datenbankabstraktion, die Anmeldung erfolgt über Azure Active Directory.
-            Es wurde eine REST-Schnittstelle (API) definiert, über die Lernende ihre Arbeitszeiten erfassen, ändern, löschen und abrufen können.
-            Der Nutzen liegt in einer modularen, erweiterbaren Lösung, die präzise Arbeitszeitdaten für Lernende und Berufsbildner bereitstellt und 
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Dies war ein Projekt im Rahmen meiner IPA für die Technische
+            Fachschule Bern. Ziel war es, ein Backend-Modul für eine
+            Arbeitszeiterfassung zu entwickeln. Umgesetzt wurde es als
+            JavaScript-Webapplikation mit Node.js und Express.js, einer
+            MySQL-Datenbank und Knex.js zur Datenbankabstraktion, die Anmeldung
+            erfolgt über Azure Active Directory. Es wurde eine
+            REST-Schnittstelle (API) definiert, über die Lernende ihre
+            Arbeitszeiten erfassen, ändern, löschen und abrufen können. Der
+            Nutzen liegt in einer modularen, erweiterbaren Lösung, die präzise
+            Arbeitszeitdaten für Lernende und Berufsbildner bereitstellt und
             später in bestehende Architekturen integriert werden kann.
-            Zusammengefasst ermöglicht die Anwendung einfache Zeiterfassung, Auswertung und Verwaltung für interne und kundenbezogene Projekte.
-            Die Technische Fachschule Bern hat diese Lösung nach dem Abschluss meiner IPA eingeführt und verwendet. 
-            <br>
-            <a href="https://github.com/michaelpeterschmid/IPA_doc/blob/main/IPA_2022_Dokumentation_Michael_Schmid.pdf">Link Projekt Dokumentation</a>
+            Zusammengefasst ermöglicht die Anwendung einfache Zeiterfassung,
+            Auswertung und Verwaltung für interne und kundenbezogene Projekte.
+            Die Technische Fachschule Bern hat diese Lösung nach dem Abschluss
+            meiner IPA eingeführt und verwendet.
+            <br />
+            <a
+              href="https://github.com/michaelpeterschmid/IPA_doc/blob/main/IPA_2022_Dokumentation_Michael_Schmid.pdf"
+              >Link Projekt Dokumentation</a
+            >
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="arbeitszeiterfassung"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
 
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="arbeitszeiterfassung"
-            onclick="toggleModal(event)"
+      <!-- Modal Listmates -->
+      <dialog id="listmates">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="listmates"
+              onclick="toggleModal(event)"></button>
+            <h3>ListMates</h3>
+          </header>
+          <img src="img/listmates.png" alt="Listmates liste" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
+            <li>React.js</li>
+            <li>Firebase</li>
+            <li>CSS</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            ListMates ist eine vielseitige und benutzerfreundliche App zur
+            gemeinsamen Verwaltung von Listen, wie Einkaufslisten, To-Do-Listen
+            oder anderen geteilten Aufgabenübersichten. Benutzer können Listen
+            erstellen, Einträge hinzufügen, bearbeiten und löschen sowie diese
+            gezielt mit anderen Personen teilen. Ergänzend dazu ermöglicht eine
+            integrierte Chatfunktion die direkte Kommunikation innerhalb einer
+            Liste.
+            <br />
+            <br />
+            Die Anwendung wurde im Frontend mit React.js umgesetzt und nutzt
+            Firebase als Backend für Authentifizierung und Datenspeicherung.
+            Dadurch wird eine stabile und echtzeitfähige Synchronisation der
+            Daten zwischen allen beteiligten Benutzern gewährleistet.
+            <br />
+            <br />
+            Ein zentrales Ziel von ListMates war es, eine kostenlose, einfache
+            und intuitiv bedienbare Lösung für die gemeinsame Organisation im
+            Alltag zu schaffen. Die App überzeugt durch rollenbasiertes
+            Zugriffsmanagement, das klare Berechtigungen innerhalb geteilter
+            Listen ermöglicht, sowie durch Datensicherheit mittels Firestore
+            Security Rules.
+
+            <br />
+            <br />
+            <a href="https://listmates.web.app">Web-App testen</a>
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="listmates"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
+
+      <!-- Modal Job analysis -->
+      <dialog id="job_analysis">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="job_analysis"
+              onclick="toggleModal(event)"></button>
+            <h3>Swiss IT Job-Market Analyse</h3>
+          </header>
+          <img src="img/job_analysis.png" alt="job_analysis liste" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
+            <li>Python</li>
+            <li>Scrapingbee</li>
+            <li>Pandas</li>
+            <li>Parquet</li>
+            <li>DuckDB</li>
+            <li>Matplotlib</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Dies war ein Projekt im Rahmen meines Studiums zur Analyse des
+            Schweizer IT-Jobmarktes mittels Web-Scraping und Datenaufbereitung.
+            Es wurde eines der grössten Jobportale der Schweiz ausgewählt
+            (jobs.ch), um IT-Jobangebote zu extrahieren. Mithilfe von
+            Scrapingbee wurden die Webseiten systematisch durchsucht,
+            heruntergeladen und anschliessend wurden relevante Daten wie
+            Technologien, Standort, Unterkategoierien usw. extrahiert und in
+            parquet gespeichert. Mittels Duckdb und Pandas wurden die Analyse
+            durchgeführt und visualisiert. Ziel war es, Trends und Muster im
+            IT-Jobmarkt zu identifizieren, um Einblicke in gefragte Technologien
+            und Anforderungen zu gewinnen. Dieses Script könnte in Zukunft
+            regelmässig ausgeführt werden, um den IT-Jobmarkt kontinuierlich zu
+            überwachen und aktuelle Daten bereitzustellen.
+            <br />
+            <br />
+            <a href="https://michaelpeterschmid.github.io/job_scraping_results/"
+              >Ergebnisse ansehen</a
+            >
+            <br />
+            <a href="https://github.com/michaelpeterschmid/job_scraping"
+              >Gesamtes Github Repository</a
+            >
+          </p>
+
+          <br />
+          <br />
+
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="job_analysis"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
+
+      <!-- Modal connect 4 3D -->
+      <dialog id="connect43d">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="connect43d"
+              onclick="toggleModal(event)"></button>
+            <h3>Connect 4 3D</h3>
+          </header>
+          <img src="img/connect43d_modal.png" alt="connect 4 3d in action" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>Pico CSS</li>
+            <li>JavaScript</li>
+            <li>Socket.io</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Dies war ein Hobby-Projekt von mir. „4 Gewinnt 3D“ habe ich zum
+            ersten Mal in klassischer Form auf einer Holzspielplatte mit meinem
+            Cousin gespielt. Schon bald wurde es zu einem meiner
+            Lieblings-Strategiespiele, da es sehr einfach zu verstehen ist und
+            dennoch eine erstaunliche Spieltiefe bietet. Da ich keine digitale
+            Version des Spiels fand, kam mir die Idee, eine Web-App zu
+            entwickeln, um es online mit meinen Freunden spielen zu können. Die
+            Entwicklung der digitalen Version ermöglichte es mir, sowohl an der
+            Spiel­logik als auch an der Multiplayer-Implementierung zu tüfteln.
+            Die erste Version entstand während meiner Lehre (ca. 2021), kürzlich
+            habe ich das Projekt wieder aufgenommen, neue Features hinzugefügt
+            und es im Google Play Store veröffentlicht. Das Backend für die
+            Multiplayer Komponente wird auf Render gehostet.
+            <br />
+            <a
+              href="https://play.google.com/store/apps/details?id=io.github.michaelpeterschmid.connect43doffline"
+              >herunterladen bei Google Play Store</a
+            >
+            <br />
+            <span class="nowrap"
+              ><a
+                href="https://michaelpeterschmid.github.io/connect-4-3D-static/"
+                >Web-App testen</a
+              ></span
+            >
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="connect43d"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
+
+      <!-- Modal statistical testing -->
+      <dialog id="statistical_testing">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="statistical_testing"
+              onclick="toggleModal(event)"></button>
+            <h3>Statistical Testing</h3>
+          </header>
+          <img src="img/statistical_testing.png" alt="Berechtigungskonzept" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>Jupyter Notebooks</li>
+            <li>parquet</li>
+            <li>DuckDB</li>
+            <li>Matplotlib</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            <br />
+            Die Daten stammen von unseren Familien und Freunden (Migros Cumulus
+            und Coop Supercard Daten) und wurden mit Python aufbereitet und
+            analysiert (Dies wird nicht gezeigt aus Datenschutzgründen). Bie
+            diesem Projekt im Rahmen meines Data Engineering Studiums ging es
+            darum, eine Hypothese mittels statistischer Tests zu überprüfen.
+            Folgende 2 Hypothesen wurden untersucht:
+          </p>
+          <ul>
+            <li>
+              Eine grössere Entfernung zum Lebensmittelgeschäft geht mit höheren
+              Ausgaben pro Besuch einher (grösserer Warenkorb).
+            </li>
+            <li>
+              Eine kürzere Entfernung zum Lebensmittelgeschäft geht mit
+              häufigeren wöchentlichen Besuchen einher?
+            </li>
+          </ul>
+
+          <br />
+          <a
+            href="https://github.com/michaelpeterschmid/grocery_store_distance_statistical_testing/blob/main/analysis_report.ipynb"
+            >Ergebnisse ansehen</a
           >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
 
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="statistical_testing"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
 
-  <!-- Modal Data Engineering und Machine Learning -->
-    <dialog id="da_ml">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="da_ml"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Data Engineering und Machine Learning</h3>
-        </header>
-        <img src="img/plot.png" alt="Berechtigungskonzept">
-        <br>
-        <br>
-        <h4>Verwendete Technologien:</h4>
-        <ul>
+      <!-- Modal Data Engineering und Machine Learning -->
+      <dialog id="da_ml">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="da_ml"
+              onclick="toggleModal(event)"></button>
+            <h3>Data Engineering und Machine Learning</h3>
+          </header>
+          <img src="img/plot.png" alt="Berechtigungskonzept" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
             <li>Python</li>
             <li>Pandas</li>
             <li>Jupyter Notebooks</li>
             <li>scikit-learn</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Projekte bei denen es Datenalayse oder um das trainieren von ML
+            Modellen geht. Da ich im Data Engineering und Machine Learning an
+            der Berner Fachhochschule studiere, wird es in Zukunft weiter,
+            anspruchsvollere Projekte geben.
+            <br />
+            <a
+              href="https://github.com/michaelpeterschmid/popularity_of_libs_in_python"
+              >Kleines Data-Analysis Projekt</a
+            >
+            <br />
+            <a
+              href="https://github.com/michaelpeterschmid/machine_learning_fundamentals"
+              >Machine Learning Notebooks</a
+            >
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="da_ml"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
 
-        </ul>
-        <h4>Beschreibung</h4>
-        <p>
-
-            Projekte bei denen es Datenalayse oder um das trainieren von ML Modellen geht. Da ich im Data Engineering und Machine Learning an der Berner Fachhochschule studiere, 
-            wird es in Zukunft weiter, anspruchsvollere Projekte geben.
-            <br>
-            <a href="https://github.com/michaelpeterschmid/popularity_of_libs_in_python">Kleines Data-Analysis Projekt</a> <br>
-            <a href="https://github.com/michaelpeterschmid/machine_learning_fundamentals">Machine Learning Notebooks</a>
-
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="da_ml"
-            onclick="toggleModal(event)"
-          >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
-
-
-
-<!-- Modal Bovo-->
-    <dialog id="bovo">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="bovo"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Gomoku</h3>
-        </header>
-        <img src="img/bovo.png" alt="Gomoku">
-        <br>
-        <br>
-        <h4>Verwendete Technologien:</h4>
-        <ul>
+      <!-- Modal Bovo-->
+      <dialog id="bovo">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="bovo"
+              onclick="toggleModal(event)"></button>
+            <h3>Gomoku</h3>
+          </header>
+          <img src="img/bovo.png" alt="Gomoku" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Socket.io</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Gomoku, auch bekannt als "Fünf in einer Reihe", ist ein
+            traditionelles Strategiespiel, das seinen Ursprung in Ostasien hat.
+            Es wird auf einem Gitterbrett gespielt, wobei zwei Spieler
+            abwechselnd Steine platzieren, um eine ununterbrochene Reihe von
+            fünf Steinen horizontal, vertikal oder diagonal zu bilden. In meiner
+            digitalen Version von Gomoku habe ich sowohl die Spielmechanik als
+            auch die Multiplayer-Funktionalität implementiert. Das Spiel
+            ermöglicht es den Spielern, online gegeneinander anzutreten, was
+            durch die Verwendung von Socket.io für die Echtzeit-Kommunikation
+            zwischen den Spielern erreicht wird. Die Benutzeroberfläche wurde
+            mit HTML und CSS gestaltet, um ein ansprechendes und
+            benutzerfreundliches Erlebnis zu bieten. JavaScript wurde verwendet,
+            um die Spiellogik zu implementieren und die Interaktivität zu
+            gewährleisten.
 
-        </ul>
-        <h4>Beschreibung</h4>
-        <p>
+            <br />
+            <a href="https://michaelpeterschmid.github.io/Bovo/">Bovo Webapp</a>
+            <br />
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="bovo"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
 
-            Gomoku, auch bekannt als "Fünf in einer Reihe", ist ein traditionelles Strategiespiel, das seinen Ursprung in Ostasien hat. Es wird auf einem Gitterbrett gespielt, wobei zwei Spieler abwechselnd Steine platzieren, um eine ununterbrochene Reihe von fünf Steinen horizontal, vertikal oder diagonal zu bilden.
-            In meiner digitalen Version von Gomoku habe ich sowohl die Spielmechanik als auch die Multiplayer-Funktionalität implementiert. Das Spiel ermöglicht es den Spielern, online gegeneinander anzutreten, was durch die Verwendung von Socket.io für die Echtzeit-Kommunikation zwischen den Spielern erreicht wird.
-            Die Benutzeroberfläche wurde mit HTML und CSS gestaltet, um ein ansprechendes und benutzerfreundliches Erlebnis zu bieten. JavaScript wurde verwendet, um die Spiellogik zu implementieren und die Interaktivität zu gewährleisten.
-
-            <br>
-            <a href="https://michaelpeterschmid.github.io/Bovo/">Bovo Webapp</a> <br>
-
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="bovo"
-            onclick="toggleModal(event)"
-          >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
-
-
-<!-- Modal Chatapp-->
-     <dialog id="chatapp">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="chatapp"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Chatapp</h3>
-        </header>
-        <img src="img/chatapp.png" alt="Chatapp">
-        <br>
-        <br>
-        <h4>Verwendete Technologien:</h4>
-        <ul>
+      <!-- Modal Chatapp-->
+      <dialog id="chatapp">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="chatapp"
+              onclick="toggleModal(event)"></button>
+            <h3>Chatapp</h3>
+          </header>
+          <img src="img/chatapp.png" alt="Chatapp" />
+          <br />
+          <br />
+          <h4>Verwendete Technologien:</h4>
+          <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
             <li>Socket.io</li>
+          </ul>
+          <h4>Beschreibung</h4>
+          <p>
+            Dies ist eine minimalistische Chat-App, die es Benutzern ermöglicht,
+            Chat-Räume zu erstellen und ihnen beizutreten. Die Anwendung wurde
+            als Prototyp entwickelt, um eine einfache und benutzerfreundliche
+            Plattform für die Kommunikation zu bieten.
 
-        </ul>
-        <h4>Beschreibung</h4>
-        <p>
-            Dies ist eine minimalistische Chat-App, die es Benutzern ermöglicht, Chat-Räume zu erstellen und ihnen beizutreten. 
-            Die Anwendung wurde als Prototyp entwickelt, um eine einfache und benutzerfreundliche Plattform für die Kommunikation zu bieten.
+            <br />
+            <a href="https://michaelpeterschmid.github.io/ChatApp/client/"
+              >chatapp (website)</a
+            >
+            <br />
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="chatapp"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
 
-            <br>
-            <a href="https://michaelpeterschmid.github.io/ChatApp/client/">chatapp (website)</a> <br>
+      <!-- Modal Work in Progress-->
+      <dialog id="inprogress">
+        <article>
+          <header>
+            <button
+              aria-label="Close"
+              rel="prev"
+              data-target="inprogress"
+              onclick="toggleModal(event)"></button>
+            <h3>Other projects</h3>
+          </header>
+          <img
+            src="img/github-repo-git-octocat-svgrepo-com.svg"
+            alt="inprogress" />
+          <br />
+          <br />
 
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="chatapp"
-            onclick="toggleModal(event)"
-          >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
+          <h4>Beschreibung</h4>
+          <p>
+            Neue Projekte oder Projekte die noch in nicht fertiggestellt sind,
+            können auf meinem Github Account gefunden werden.
 
-
-<!-- Modal Work in Progress-->
-     <dialog id="inprogress">
-      <article>
-        <header>
-          <button
-            aria-label="Close"
-            rel="prev"
-            data-target="inprogress"
-            onclick="toggleModal(event)"
-          ></button>
-          <h3>Other projects</h3>
-        </header>
-        <img src="img/github-repo-git-octocat-svgrepo-com.svg" alt="inprogress">
-        <br>
-        <br>
-
-        <h4>Beschreibung</h4>
-        <p>
-            Neue Projekte oder Projekte die noch in nicht fertiggestellt sind, können auf meinem Github Account gefunden werden.
-
-            <br>
-            <a href="https://github.com/michaelpeterschmid">Github link</a> <br>
-
-         </p> 
-        <footer>
-          <button
-            role="button"
-            class="secondary"
-            data-target="inprogress"
-            onclick="toggleModal(event)"
-          >
-            Schliessen</button>
-        </footer>
-      </article>
-    </dialog>
-
-        
+            <br />
+            <a href="https://github.com/michaelpeterschmid">Github link</a>
+            <br />
+          </p>
+          <footer>
+            <button
+              role="button"
+              class="secondary"
+              data-target="inprogress"
+              onclick="toggleModal(event)">
+              Schliessen
+            </button>
+          </footer>
+        </article>
+      </dialog>
     </main>
 
-
-
-
-
     <div class="footerdiv" id="contact">
-        <br>
-        <footer class="pico container">
-            <section >
-                <h3>Kontakt</h3>
-                <p>E-Mail: michaelpeterschmid@yahoo.de</p>
-                &copy; Michael Peter Schmid
-            </section>
-            
-        </footer>
+      <br />
+      <footer class="pico container">
+        <section>
+          <h3>Kontakt</h3>
+          <p>E-Mail: michaelpeterschmid@yahoo.de</p>
+          &copy; Michael Peter Schmid
+        </section>
+      </footer>
 
-        <br>
+      <br />
     </div>
 
-    
-
-    
     <!-- Modal -->
     <script src="js/modal.js"></script>
-    
-    
-</body>
+  </body>
 </html>
